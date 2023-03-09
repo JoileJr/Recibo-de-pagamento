@@ -11,5 +11,38 @@ body {
     border-radius: 20px;
     background: #fff;
     margin-top: 50px;
+    margin-bottom: 50px;
     padding: 20px;
+}
+
+label{
+    font-weight: bold;
+}
+
+input {
+    padding: 10px;
+}
+
+button {
+    text-decoration: none;
+    color: #fff;
+    border-color: #485fc7;
+    background-color: #485fc7;
+    border-radius: 5px;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+span{
+    padding: 5px;
+}
+
+.radio-list{
+    display: flex;
+}
+
+.label-pagamento{
+    font-weight: normal;
 }
