@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,107 +10,53 @@
 </head>
 <body>
     <div class="container">
-        <table>
-            <h1>Recibo de Pagamento</h1>
-            <tr>
-                <td>
-                    <label for="">Valor:</label><br>
-                    <input type="number" placeholder="00,00">
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <label for="">Nome do Pagador:</label><br>
-                    <input type="text">
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <label for="">CPF ou CNPJ (Opcional):</label><br>
-                    <input type="text" placeholder="Somente numeros">
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <label for="">Referente à:</label><br>
-                    <input type="text">
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <label for="">Cidade:</label><br>
-                    <input type="text">
-                </td>
-                <td>
-                    <label for="">Data:</label><br>
-                    <input type="date">
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <label for="">Nome do Emissor:</label><br>
-                    <input type="text">
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <label for="">Telefone (opcional):</label><br>
-                    <input type="text">
-                </td>
-                <td>
-                    <label for="">CPF ou CNPJ (opcional):</label><br>
-                    <input type="text" placeholder="Somente numeros">
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <label for="">Observações:</label><br>
-                    <input type="text">
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <label for="">Forma de Pagamento:</label>
-                </td>
-            </tr>
-            <tr class="radio-list">
-                <td>
-                    <input type="radio" name="" id="">
-                    <label for="" class="label-pagamento">Dinheiro</label>
-                </td>
-                <td>
-                    <input type="radio" name="" id="">
-                    <label for="" class="label-pagamento">Pix</label>
-                </td>
-                <td>
-                    <input type="radio" name="" id="">
-                    <label for="" class="label-pagamento">Cheque</label>
-                </td>
-                <td>
-                    <input type="radio" name="" id="">
-                    <label for="" class="label-pagamento">Transferência/Depósito</label>
-                </td>
-                <td>
-                    <input type="radio" name="" id="">
-                    <label for="" class="label-pagamento">Cartão de Crédito/Débito</label>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <label for="">Duas vias:</label><br>
-                    <input type="checkbox">
-                    <label for="">Sim</label>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <button>
-                        <span class="material-symbols-outlined">description</span>
-                        <span>Gerar recibo</span>
-                    </button>
-                </td>
-            </tr>
-        </table>
+        <h1>Recibo de pagamento</h1>
+    <form action="">
+        <div class="rows">
+            <label for="">Valor:</label>
+            <input type="text">
+        </div>
+        <div class="rows">
+            <label for="">Nome do pagador:</label>
+            <input type="text">
+        </div>
+        <div class="rows">
+            <label for="">CPF ou CNPJ (opcional):</label>
+            <input type="text">
+        </div>
+        <div class="rows">
+            <label for="">Referente à:</label>
+            <input type="text">
+        </div>
+        <div class="rows">
+            <div class="collumns" style="width: 50%;">
+                <label for="">Cidade:</label>
+                <input type="text">
+            </div>
+            <div class="collumns" style="width: 50%;">
+                <label for="">Data:</label>
+                <input type="text">
+            </div>
+        </div>
+        <div class="rows">
+            <label for="">Nome do Emissor:</label>
+            <input type="text">
+        </div>
+        <div class="rows">
+            <div class="collumns" style="width: 50%;">
+                <label for="">Telefone(opcional):</label>
+                <input type="tel">
+            </div>
+            <div class="collumns" style="width: 50%;">
+                <label for="">CPF ou CNPJ(opcional):</label>
+                <input type="text">
+            </div>
+        </div>
+        <div class="rows">
+            <label for="">Observações:</label>
+            <textarea name="" id="" cols="30" rows="10"></textarea>
+        </div>
     </div>
+    </form>
 </body>
 </html>
