@@ -12,6 +12,7 @@ label{
     margin-left: 0;
 }
 
+
 .input{
     padding: 10px;
     border-radius: 3px;
@@ -102,4 +103,5 @@ button {
     background-color: #485fc7;
     border-color: #c2b5b5;
     color: #fff;
+    border-radius: 3px;
 }
