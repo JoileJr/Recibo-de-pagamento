@@ -10,72 +10,122 @@
 </head>
 <body>
     <div class="container">
-        <h1>Recibo de pagamento</h1>
+        <h1>Recibo de Pagamento</h1>
         <form action="">
             <div class="rows">
-                <div>
+                <div class="collumns">
                     <label for="">Valor:</label>
-                    <input type="text">
+                    <input type="text" placeholder="00,00"><br>
+                    <p>Valor recebido</p>
                 </div>
             </div>
 
             <div class="rows">
-                <div>
+                <div class="collumns">
                     <label for="">Nome do pagador:</label>
-                    <input type="text">
+                    <input type="text" id="nome-pagador">
                 </div>
             </div>
 
             <div class="rows">
-                <div>
+                <div class="collumns">
                     <label for="">CPF ou CNPJ (opcional):</label>
-                    <input type="text">
+                    <input type="text" id="cpf"><br>
+                    <p>Somente números</p>
                 </div>
             </div>
 
             <div class="rows">
-                <div>
+                <div class="collumns">
                     <label for="">Referente à:</label>
-                    <input type="text">
+                    <input type="text" id="referente">
                 </div>
             </div>
             
             <div class="rows">
-                <div class="collumns" style="width: 50%;">
+                <div class="double-collumns">
                     <label for="">Cidade:</label>
-                    <input type="text">
+                    <input type="text" class="input-duplo">
                 </div>
-                <div class="collumns" style="width: 50%;">
+                <div class="double-collumns">
                     <label for="">Data:</label>
-                    <input type="text">
+                    <input type="text" class="input-duplo">
                 </div>
             </div>
 
             <div class="rows">
-                <div>
+                <div class="collumns">
                     <label for="">Nome do Emissor:</label>
-                    <input type="text">
+                    <input type="text" id="nome-emissor">
                 </div>
             </div>
 
             <div class="rows">
-                <div class="collumns" style="width: 50%;">
-                    <label for="">Telefone(opcional):</label>
-                    <input type="tel">
+                <div class="double-collumns">
+                    <label for="">Telefone (opcional):</label>
+                    <input type="tel" class="input-duplo">
                 </div>
-                <div class="collumns" style="width: 50%;">
-                    <label for="">CPF ou CNPJ(opcional):</label>
-                    <input type="text">
+                <div class="double-collumns">
+                    <label for="">CPF ou CNPJ (opcional):</label>
+                    <input type="text" class="input-duplo"><br>
+                    <p>Somente números</p>
+                </div>
+            </div>
+
+            <div class="rows">
+                <div class="collumns">
+                    <label for="">Observações:</label>
+                    <textarea name="" id="obs" cols="30" rows="10"></textarea>
                 </div>
             </div>
 
             <div class="rows">
                 <div>
-                    <label for="">Observações:</label>
-                    <textarea name="" id="" cols="30" rows="10"></textarea>
+                    <label for="">Formas de pagamento:</label>
                 </div>
             </div>
-            
+
+            <div class="rows">
+                <div class="radio-input">
+                    <input type="radio">
+                    <label for="">Dinheiro</label>
+                </div>
+
+                <div class="radio-input">
+                    <input type="radio">
+                    <label for="">Pix</label>
+                </div>
+
+                <div  class="radio-input">
+                    <input type="radio">
+                    <label for="">Cheque</label>
+                </div>
+
+                <div  class="radio-input">
+                    <input type="radio">
+                    <label for="">Transferência/Depósito</label>
+                </div>
+
+                <div  class="radio-input">
+                    <input type="radio">
+                    <label for="">Cartão de crédito/Débito</label>
+                </div>
+            </div>
+
+            <div class="rows">
+                <div class="collumns">
+                    <label for="">Duas Vias:</label>
+                    <input type="checkbox" name="" id=""> <span><strong>Sim</strong></span>
+                </div>
+            </div>
+
+            <div class="rows">
+                <button>
+                    <i class="material-symbols-outlined">description</i>
+                    <span>Gerar recibo</span>
+                </button>
+            </div>
+
         </form>
     </div>
 </body>
