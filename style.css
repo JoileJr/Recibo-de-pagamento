@@ -8,9 +8,11 @@ body{
 label{
     display: block;
     font-weight: bold;
+    margin: 5px;
+    margin-left: 0;
 }
 
-input{
+.input{
     padding: 10px;
     border-radius: 3px;
     border-color: #c2b5b5;
