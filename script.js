@@ -1,5 +1,3 @@
-window.addEventListener("load", obterData);
-
 function validarCPFouCNPJ(cpfOuCnpj){
     const cpfInvalidos = [
     '00000000000000', '11111111111111', '22222222222222', '33333333333333',
@@ -34,13 +32,6 @@ function validarCPFouCNPJ(cpfOuCnpj){
 
 function somenteNumeros(inputId) {
     document.getElementById(inputId).value = document.getElementById(inputId).value.replace(/[^\,0-9]*$/, "");
-}
-
-function obterData() {
-    let date = new Date();
-    date.setDate(1);
-    let month = date.toLocaleString("pt-br", { month: "long" });
-    document.getElementById("remuneracaoMensal").value = capitalize(month) + " " + date.getFullYear();
 }
 
 function obterValorForm() {
