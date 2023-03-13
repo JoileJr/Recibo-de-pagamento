@@ -23,14 +23,14 @@
             <div class="rows">
                 <div class="collumns">
                     <label for="">Nome do pagador:</label>
-                    <input type="text" id="nome-pagador" class="input" required>
+                    <input id="nome-pagador" type="text" id="nome-pagador" class="input" required>
                 </div>
             </div>
 
             <div class="rows">
                 <div class="collumns">
                     <label for="">CPF ou CNPJ (opcional):</label>
-                    <input type="text" id="cpf" class="input" onInput="validarCPFouCNPJ(this)" required><br>
+                    <input type="text"  id="cpf_cnpj_pagador" class="input" onInput="validarCPFouCNPJ(this)" required><br>
                     <p>Somente números</p>
                 </div>
             </div>
@@ -38,18 +38,18 @@
             <div class="rows">
                 <div class="collumns">
                     <label for="">Referente à:</label>
-                    <input type="text" id="referente" class="input" required>
+                    <input id="referente" type="text" id="referente" class="input" required>
                 </div>
             </div>
             
             <div class="rows">
                 <div class="double-collumns">
                     <label for="">Cidade:</label>
-                    <input type="text" class="input-duplo input" required>
+                    <input id="cidade" type="text" class="input-duplo input" required>
                 </div>
                 <div class="double-collumns">
                     <label for="">Data:</label>
-                    <input type="date" class="input-duplo input" required>
+                    <input id="data" type="date" class="input-duplo input" required>
                 </div>
             </div>
 
@@ -67,7 +67,7 @@
                 </div>
                 <div class="double-collumns">
                     <label for="">CPF ou CNPJ (opcional):</label>
-                    <input type="text" class="input-duplo input" onInput="validarCPFouCNPJ(this)" required><br>
+                    <input type="text" id="cpf_cnpj_emissor" class="input-duplo input" onInput="validarCPFouCNPJ(this)" required><br>
                     <p>Somente números</p>
                 </div>
             </div>
@@ -115,7 +115,7 @@
             <div class="rows">
                 <div class="collumns">
                     <label for="">Duas Vias:</label>
-                    <input type="checkbox" name="" id=""> <span><strong>Sim</strong></span>
+                    <input type="checkbox" name="" id="duas-vias"> <span><strong>Sim</strong></span>
                 </div>
             </div>
 

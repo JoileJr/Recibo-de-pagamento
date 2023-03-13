@@ -42,3 +42,19 @@ function obterData() {
     let month = date.toLocaleString("pt-br", { month: "long" });
     document.getElementById("remuneracaoMensal").value = capitalize(month) + " " + date.getFullYear();
 }
+
+function obterValorForm() {
+    valor = document.getElementById("valor").value;
+    nomePagador = document.getElementById("nome-pagador").value;
+    cpfCnpjPagador = document.getElementById("cpf_cnpj_pagador").value;
+    referente = document.getElementById("referente");
+    cidade = document.getElementById("cidade").value;
+    data = new Date(document.getElementById("data").value);
+    telefone = document.getElementById("telefone");
+    cpfCnpjEmissor = document.getElementById("cpf_cnpj_emissor").value;
+    obs = document.getElementById("obs");
+}
+
+function abrirRecibo() {
+    obterValorForm();
+}
