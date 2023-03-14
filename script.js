@@ -35,17 +35,32 @@ function somenteNumeros(inputId) {
 }
 
 function obterValorForm() {
-    valor = document.getElementById("valor").value;
+    const valor = document.getElementById("valor").value;
     nomePagador = document.getElementById("nome-pagador").value;
+    nomeEmissor = document.getElementById("nome-emissor").value;
     cpfCnpjPagador = document.getElementById("cpf_cnpj_pagador").value;
     referente = document.getElementById("referente");
     cidade = document.getElementById("cidade").value;
     data = new Date(document.getElementById("data").value);
     telefone = document.getElementById("telefone");
     cpfCnpjEmissor = document.getElementById("cpf_cnpj_emissor").value;
-    obs = document.getElementById("obs");
+    obs = document.getElementById("obs").value;
 }
 
 function abrirRecibo() {
+    gerarRecibo();
+}
+
+function gerarRecibo(){
     obterValorForm();
+    var recibo =`<h3>Recibo de pagamento</h3>
+    <p style="text-align: justify;">Recebi(emos) de <strong>${nomePagador}</strong> - CPF/CNPJ nº <strong>${cpfCnpjPagador}</strong>, a importância de <strong>${valor}</strong> referente à ${referente}.</p>
+    <p style="text-align: justify;">Para maior clareza firmo(amos) o presente recibo para que produza os seus efeitos, dando plena, rasa e irrevogável quitação, pelo valor recebido.</p>
+    <h4 style="text-align: left;">Observação:</h4>
+    <p style="text-align: left;">${obs}</p>
+    <p id="textoFantasma" style="text-decoration: overline;">${nomeEmissor}</p>
+    <p style="text-align: right; margin-right: 20px;">${cidade}, ${data}</p>
+    <p style="text-align: center;">${numero}</p>`
+
+    document.querySelector("#recibo").innerHTML = recibo;
 }
